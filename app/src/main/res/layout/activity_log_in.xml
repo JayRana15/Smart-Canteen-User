@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".logInActivity"
+    android:background="@drawable/ss_bg">
+    
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:titleTextColor="@color/white"
+        app:title="Welcome"
+        app:subtitle="To continue fill up below fields"
+        app:subtitleTextColor="@color/white"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til0"
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/white"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:helperText="Name"
+            app:helperTextTextColor="@color/white"
+            app:startIconTint="@color/white"
+            app:hintTextColor="@color/white"
+            app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:hint="Enter name" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til1"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/til0"
+        android:layout_centerHorizontal="true"
+        app:prefixText="+91"
+        android:layout_marginTop="64dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:helperText="Phone number"
+        app:startIconTint="@color/white"
+        app:endIconTint="@color/white"
+        app:counterTextColor="@color/white"
+        app:prefixTextColor="@color/white"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/white"
+        app:startIconDrawable="@drawable/ic_baseline_call_24">
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone number"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textColor="@color/white"
+            android:inputType="phone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/OTPButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/til1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/white"
+        android:text="Next"
+        android:textColor="@color/navyBlue" />
+
+
+</RelativeLayout>

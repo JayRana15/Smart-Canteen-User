@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashBoardActivity"
+    android:background="@drawable/ss_bg">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Dashboard"
+        app:titleTextColor="@color/white"/>
+
+    <RelativeLayout
+        android:id="@+id/RL1"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/toolbar2"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="64dp"
+        android:background="@color/navyBlue"
+        android:elevation="15dp"
+        android:outlineSpotShadowColor="@color/black">
+
+        <TextView
+            android:id="@+id/ordersButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Your Orders"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL2"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/toolbar2"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_toEndOf="@+id/RL1"
+        android:background="@color/white"
+        android:elevation="15dp"
+        android:outlineSpotShadowColor="@color/black">
+
+        <TextView
+            android:id="@+id/tempTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Total amount spent"
+            android:textAlignment="center"
+            android:textColor="@color/navyBlue"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/total_spent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tempTV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="0₹"
+            android:textColor="@color/navyBlue"
+            android:textSize="24dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL3"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/RL1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        android:elevation="15dp"
+        android:outlineSpotShadowColor="@color/black">
+
+        <TextView
+            android:id="@+id/changeNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Change registered mobile number"
+            android:textColor="@color/navyBlue"
+            android:textSize="24dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL4"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/RL2"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@id/RL1"
+        android:background="@color/navyBlue"
+        android:elevation="15dp"
+        android:outlineSpotShadowColor="@color/black">
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Menu"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
